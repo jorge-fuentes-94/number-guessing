@@ -38,7 +38,7 @@ def dar_pistas(intento,rango_máximo,solución):
             pista_a_modificar = " "
         else:
             pista_a_modificar = "no "
-        print ("Cuarta pista: el número {} divisible entre 3."format(pista_a_modificar))
+        print ("Cuarta pista: el número {} divisible entre 3.".format(pista_a_modificar))
     elif intento== 1:
         print ("el número al cuadrado es {}.".format(solución*solución))
  
@@ -60,8 +60,10 @@ while intento > 0:
        print ("¡Felicidades! Has conseguido superar el juego.")
        print ("El número a adivinar era {}.".format(solución))
        print ("Tu puntuación final es {}".format(intento))
+       exit()
     elif intento == 1 and input_jugador != solución:
         print ("Lo siento. Has agotado el número de intentos. Tendrás que empezar de nuevo.")
+        exit()
     elif intento == 2:
         intento -= 1
         print ("Has fallado. Te quedan {} intento. Añadimos otra pista.".format(intento))
